@@ -1,0 +1,10 @@
+dump-kernel-log [options]
+
+Options:
+ -a: ramoops reserved address (only in the low 4GB space is available)
+ -s: ramoops reserved size
+ -o: output dmesg file, default /var/dmesg.txt
+ -d: 0/1 disable/enable debug function
+
+Examples:
+ $ dump-kernel-log -a 0x6bff0000 -s 0x10000 -o /var/dmesg.txt -d 1
